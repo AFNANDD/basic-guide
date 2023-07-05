@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Introduction</h1>
+            <h3>CSS (Cascading Style Sheets)</h3>
+            <p><b>CSS (Cascading Style Sheets)</b> เป็นเทคโนโลยีที่นํามาใช้จัดรูป
+                แบบและควบคุมการแสดงผลของเว็บ เช่น การกําหนดขนาด สี แบบ
+                อักษร เส้นขอบ พื้นหลัง และตําแหน่งของข้อความ รูปภาพ เป็นต้น </p>
+            <h3>โครงสร้างของ CSS</h3>
+            <p>มีส่วนประกอบอยู่ 2 ส่วน คือ Selector และ Declaration</p>
+            <ul type="disk">
+                <li>Selector คือแท็ก HTML, ID และ Class ที่ต้องการกําหนด</li>
+                <li>Declaration ใช้สําหรับกําหนดค่าให้กับ Selector</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                Selector{ <br>
+                    &nbsp;&nbsp;Declaration <br>
+                    }                     
+            </p>
+        </div>
+        <div>
+            <p><b>Selector</b>คือแท็ก HTML, ID และ Class ที่ต้องการกําหนด
+                คุณสมบัติ แบ่งออกเป็น 3 รูปแบบ</p>
+            <p>-<b> Element Selector</b> คือ การกําหนด style ให้แท็ก HTML โดยตรง</p>
+            <p>-<b> Class Selector</b> คือ การกําหนด style โดยใช้ชื่อ Class เป็น
+                Selector โดยใช้เครื่องหมายจุด (.) สามารถมีค่าซ้ำกันได้</p>
+            <p>-<b> ID Selector</b>คือ การกําหนด style โดยระบุชื่อ ID เป็นรหัสเฉพาะของ
+                แท็กหลังเครื่องหมาย # โดย ID ไม่สามารถกําหนดค่าซ้ำกันได</p>
+        </div>
+        <div>
+            <p><b>Declaration </b>n ใช้กําหนดค่าให้กับ selector ซึ่งมีส่วนประกอบ
+                อยู่ด้วยกัน 2 ส่วน คือ</p>
+            <p>-<b> Property หรือ Attribute </b> คือคุณสมบัติที่ต้องการกําหนดให้กับ Selector</p>
+            <p>-<b> Value</b> ค่าที่กําหนดให้กับ Property หรือ Attribute</p>
+        </div>
+        <div>
+            <p> การกําหนดส่วนของ property กับ value จะแยกด้วยเครื่องหมาย
+                colon (:) ถ้ามีมากกว่า 1 property จะต้องแยกด้วยเครื่องหมาย
+                semi-colon (;) โดยมีรูปแบบดังน </p>
+            <p> selector { property : value; property : value …} </p>
+            <p>ตัวอย่าง</p>
+            <p>Tag Selector</p>
+            <p>
+                p {  <br>
+                    color: red; <br>
+                    text-align:center; <br>
+                    padding: 10px; <br>
+                   } <br>
+                   
+            </p>
+            <p>Class  Selector</p>
+            <p>
+                .title {  <br>
+                    color: red; <br>
+                    text-align:center; <br>
+                    padding: 10px; <br>
+                   } <br>
+                   
+            </p>
+            <p>Id Selector</p>
+            <p>
+                #message {  <br>
+                    color: red; <br>
+                    text-align:center; <br>
+                    padding: 10px; <br>
+                   } <br>
+                   
+            </p>
+            <p>Union Selector</p>
+            <p>
+                .title , #message , p {  <br>
+                    color: red; <br>
+                    text-align:center; <br>
+                    padding: 10px; <br>
+                   } <br>
+                   
+            </p>
+        </div>
+        <div>
+            <h3>รูปแบบการประกาศใช้ CSS</h3>
+            <h4>แบบ Internal </h4>
+            <p>● Inline เป็นการแทรก attribute style ลงในแท็ก HTML</p>
+            <p>● Embeded การกําหนดรูปแบบ style sheet ภายในไฟล์เดียวกันกับ
+                ไฟล์เว็บโดยการเขียนภายใต้ &lt;style&gt; &hellip; &lt;/style&gt;</p>
+            <h4>แบบ External</h4>
+            <p>จะกําหนดไฟล์ style sheet แยกเป็นอีกไฟล์โดยมีนามสกุล .css แล้วค่อยเชื่อม
+                เข้ามาใช้ภายในเว็บเพจ เหมาะสําหรับการกําหนดให้หลายๆเว็บเพจใช้รูปแบบ
+                style เดียวกันผ่านการเขียน style แค่ครั้งเดียว</p>
+            <h2>Internal</h2>
+            <h3>แบบ Inline</h3>
+            <p>
+                ใช้กําหนด style ให้กับอิลิเมนต์ของ HTML เพียงอันเดียวเป็นการเฉพาะ <br>
+                &lt;p style=&quot;color:green&quot;&gt;kong ruksiam.&lt;/p&gt;
+            </p>
+            <h3>แบบ Internal / Embeded</h3>
+            <p>
+                กําหนด style เอาไว้ที่ส่วนหัวของเว็บเพจโดยกําหนดผ่าน &lt;style&gt;...&lt;/style&gt; เพื่อกําหนด style ให้กับ element ในเว็บเพจนั้นๆ <br>
+                &lt;style&gt; <br>
+                p{ <br>
+                color:red; <br>
+                text-align:center; <br>
+                } <br>
+                &lt;/style&gt;
+            </p>
+            <h2>External</h2>
+            <p>จะกําหนดไฟล์ style sheet แยกเป็นอีกไฟล์โดยมีนามสกุล .css แล้ว
+                ค่อยเชื่อมเข้ามาใช้ภายในเว็บเพจโดยใช้ &lt;link&gt;</p>
+            <div>
+                <div>
+                    <h3>style.css</h3>
+                    <p>
+                        p{ <br>
+                            color:red; <br>
+                            text-align:center; <br>
+                            } <br>                            
+                    </p>
+                </div>
+                <div>
+                    <h3>index.html</h3>
+                    <p>
+                        &lt;head&gt; <br>
+                        &lt;title&gt;&lt;/title&gt; <br>
+                        &lt;link rel=&ldquo;stylesheet&rdquo;href=&ldquo;style.css&rdquo;&gt; <br>
+                        &lt;/head&gt;
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <h3>หน่วย (Unit) ใน CSS (Absolute) แบบตายตัว</h3>
+            <table border="1px " cellpadding="5px">
+                <tbody>
+                    <tr>
+                        <td>px</td>
+                        <td>pixel (พิกเซล) เป็นหน่วยที่นิยมใช้มากที่สุด โดยที่ 1px = 0.75pt สัมพันธ์กับราย
+                            ละเอียดหน้าจอ</td>
+                    </tr>
+                    <tr>
+                        <td>pt</td>
+                        <td>point โดยที่ 1 pt = 1/72 inchs ใช้ในงานสิ่งพิมพ์</td>
+                    </tr>
+                    <tr>
+                        <td>cm</td>
+                        <td>เซนติเมตร</td>
+                    </tr>
+                    <tr>
+                        <td>mm</td>
+                        <td>มิลลิเมตร</td>
+                    </tr>
+                    <tr>
+                        <td>in</td>
+                        <td>inches (1 in = 96px = 2.54cm)</td>
+                    </tr>
+                    <tr>
+                        <td>pc</td>
+                        <td>picas (1pc = 12pt)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>หน่วย (Unit) ใน CSS (Relative) แบบอัตราส่วน</h3>
+            <table border="1px" cellpadding="5px">
+                <tbody>
+                    <tr>
+                        <td>%</td>
+                        <td>เป็นการกําหนดขนาดเป็นเปอร์เซ็นต์ มักใช้กับความกว้างหรือสูง</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>อ้างอิงขนาดกับ element parent ที่ใกล้ที่สุด ใช้ในการกําหนดขนาดจํานวนเท่า ของขนาดปัจจุบันเช่น หากขนาดที่ใช้ตอนนี้คือ 10px
+                            - ถ้ากําหนดขนาดเป็น 2em จะหมายถึง 2 เท่าของขนาดปัจจุบัน คือ 20px
+                            - ถ้ากําหนดขนาดเป็น 1.4em จะหมายถึง 1.4 เท่าของขนาดปัจจุบัน คือ 14px
+                            - ถ้ากําหนดเป็นขนาดเดิมก็กําหนดเป็น 1em = 10px </td>
+                    </tr>
+                    <tr>
+                        <td>rem</td>
+                        <td>กําหนดขนาดโดยอ้างอิงกับ root element ปกติ font-size จะอยู่ที่ 16px</td>
+                    </tr>
+                    <tr>
+                        <td>vw</td>
+                        <td>1% หรือ 1/100 ของ viewport width
+                            - width ของ browser viewport เท่ากับ 750px ค่า 1vw = 7.5px</td>
+                    </tr>
+                    <tr>
+                        <td>vh</td>
+                        <td>1% หรือ 1/100 ของ viewport height
+                        - height ของ browser viewport เท่ากับ 900px ค่า 1vh = 9px</td>
+                    </tr>
+                    <tr>
+                        <td>vmin , vmax</td>
+                        <td>กําหนดค่าต˴าสุด และค่าสูงสุดของ viewport</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Universal Selector</h3>
+            <p>กําหนด style sheet มีผลต่อทุกแท็กของเว็บเพจ โดยใช้เครื่องหมาย *</p>
+            <p>
+                *{ <br>
+                    color:red; <br>
+                    } <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

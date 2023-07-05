@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background type</title>
+</head>
+<body>
+    <div>
+        <h1>การกําหนดสีพื้นหลัง (background)</h1>
+        <div>
+            <p><b>background-color</b>ใช้เปลี่ยนสีพื้นหลังหรือกําหนดความโปร่งใสให้กับ
+                พื้นหลังและ Element ต่าง ๆ</p>
+            <p>background-color : &lt;สี&gt; | transparent</p>
+            <p>สี ประกอบด้วย RGB , ชื่อสี , HEX</p>
+        </div>
+    </div>
+    <div>
+        <h1>การกําหนดภาพพื้นหลัง (background)</h1>
+        <div>
+            <p><b>background-image</b>ใช้เปลี่ยนภาพพื้นหลัง</p>
+            <p>background-image : url(รูปภาพ)</p>
+            <p>
+                url(&lsquo;image.png&rsquo;) <br>
+                url(&lsquo;http://www.unsplash&hellip;..png&rsquo;)</p>
+        </div>
+    </div>
+    <div>
+        <h1>รูปแบบภาพพื้นหลัง (background-repeat)</h1>
+        <div>
+            <p>
+                background-image:url(xxx); <br>
+                background-repeat : xxx;
+            </p>
+            <p>
+                repeat (ค่า default ทําให้ภาพเต็มพื้นที่ของอิลิเมนต์) <br>
+                repeat-x (จัดเรียงเฉพาะในแนวแกน X) <br>
+                repeat-y (จัดเรียงเฉพาะในแนวแกน Y) <br>
+                no-repeat (ไม่จัดเรียงแนวแกน x,y แสดงภาพพื้นหลังภาพเดียว)
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>กําหนดคุณสมบัติพื้นหลัง</h1>
+        <div>
+            <p>
+                โดยทั่วไปภาพพื้นหลังจะถูกเลื่อนตามการ scroll ของ <br>
+                เว็บเบราเซอร์ ถ้าต้องการตรึงภาพพื้นหลังให้อยู่กับที่สามารถทําได้ <br>
+                โดยการใช้ <b>background-attachment</b>
+            </p>
+            <p>
+                ❏ scroll (คือการเลื่อนพื้นหลังตาม scrollbar) <br>
+                ❏ fixed (คือการตรึงพื้นหลังไว้กับที่)
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>กําหนดตําแหน่งพื้นหลัง</h1>
+        <div>
+            <p>
+                <b>สามารถกําหนดได้ว่าจะเริ่มต้นวางพื้นหลังที่ตําแหน่งใด โดยใช้
+                    background-position เช่น</b> <br>
+                    background-position : center right ; (กลาง ขวา)
+            </p>
+            <p>
+                ❏ left top หรือ left center หรือ left bottom  <br>
+                ❏ right top หรือ right center หรือ right bottom <br>
+                ❏ center top หรือ center center หรือ center bottom
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>กําหนดขนาดภาพ (Background-size)</h1>
+        <div>
+            <p>
+                <b>background-size</b> : กําหนดค่า
+            </p>
+            <p>
+                ❏ auto คาปกติภาพเทาเดิม <br>
+                ❏ px หรือ % <br>
+                ❏ cover ขยายภาพทั้งความกวางความÿูงเต็มจอในอัตราÿวนเทากัน <br>
+                ❏ contain ขยายภาพทั้งความกวางความÿูงชนขอบ Browser
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>กําหนดพื้นหลังแบบหลายคุณสมบัติพร้อมกัน</h1>
+        <div>
+            <p>
+                สามารถกําหนดโดยใช้ property ชื่อว่า background
+            </p>
+            <p>
+                background : white url(images/01.jpg) no-repeat fixed center center;
+            </p>
+        </div>
+    </div>
+</body>
+</html>

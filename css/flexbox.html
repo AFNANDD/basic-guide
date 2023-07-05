@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+    <div>
+        <h1>รู้จักกับ Flexbox</h1>
+        <p>Flexbox คือเครื่องมือใน CSS ที่ช่วยให้การจัดการ element ต่างๆในหน้าเว็บ
+            มีความง่ายและยืดหยุ่นมากยิ่งขึ้น โดยทั่วไปการจัดตําแหน่ง element ต่างๆต้องใช้
+            layout mode คือ block , inline , position และอื่นๆ </p>
+        <p>
+            การพัฒนาเว็บในปัจจุบันมีความซับซ้อนมากยิ่งขึ้นทําให้การใช้ layout mode
+            แบบเดิมไม่ตอบโจทย์เท่าที่ควร จึงได้มีการพัฒนา flexbox ขึ้นมาเพื่อจัดใช้ในการ
+            จัดการ element ให้มีความยืดหยุ่นสูง โดยมีคุณสมบัติดังน
+        </p>
+        <p>
+            ● จัดเรียงตําแหน่งของ element ได้ง่ายขึ้น เรียงจากบนลงล่าง ซ้ายไปขวา อื่นๆ <br>
+            ● กําหนดขนาดให้พอดีกับพื้นที่ว่างแบบอัตโนมัติ (Sizing)
+        </p>
+    </div>
+    <div>
+        <h1>องค์ประกอบของ Flexbox</h1>
+        <p>Container (กล่องที่ครอบ Items)</p>
+        <img src="image/04.PNG" alt="">
+    </div>
+    <div>
+        <h1>จัดเรียงได้หลากหลายแบบ</h1>
+        <img src="image/05.PNG" alt="">
+    </div>
+    <div>
+        <h1>Flexbox เบื้องต้น</h1>
+        <p>
+            .container{ <br>
+                display:flex; <br>
+                box-sizing: border-box; <br>
+                }                
+        </p>
+        <p>
+            ● flex: ให้จัดวางในรูปแบบ flex <br>
+            ● border-box - กําหนดขนาดให้พอดีกับพื้นที่ว่างโดยคํานวณจากค่าจริงที่ผู้ใช้กําหนด
+            (border + padding) เพื่อไม่ให้ item แสดงผลเพี้ยน (ระบุหรือไม่ระบุก็ได้)
+        </p>
+    </div>
+    <div>
+        <h1>กําหนดทิศทางด้วย flex-direction</h1>
+        <p>● row (ค่าเริ่มต้น) จัดวาง items<b>ในแนวนอนทิศทางเดียวกับแกนหลัก</b></p>
+        <p>● column จัดวาง items<b>ในแนวตั้งทิศทางเดียวกับแกนหลัก</b></p>
+        <p>● row-reverse จัดวาง items<b>ในแนวนอนทิศทางตรงข้ามกับแกนหลัก</b></p>
+        <p>● column-reverse จัดวาง items<b>ในแนวตั้งทิศทางตรงข้ามกับแกนหลัก</b></p>
+    </div>
+    <div>
+        <h1>กําหนดขนาดด้วย flex-wrap</h1>
+        <h3>กรณีที่ขนาด items ใหญ่กว่าพื้นที่ container</h3>
+        <p>
+            ● nowrap จัดวาง items ที่เกินพื้นที่ container ไปด้านขวามือ <br>
+            ● wrap จัดวาง items ที่เกินพื้นที่ container เรียงจากบนลงล่าง <br>
+            ● wrap-reverse จัดวาง items ที่เกินพื้นที่ container เรียงจากล่างขึ้นบน
+        </p>
+    </div>
+    <div>
+        <h1>Flex - properties (Items)</h1>
+        <ul type="circle">
+            <li>flex-shrink : ให้ item หดตัวจํานวนเท่าใดเมื่อเทียบกับ item อื่นๆ
+                ค่าเริ่มต้นเป็น 1</li>
+            <li>flex-grow : ให้ item ขยายจํานวนเท่าใดเมื่อเทียบกับ item อื่นๆ
+                ค่าเริ่มต้นเป็น 0</li>
+            <li>flex-basis : กําหนดค่าความยืดหยุ่นเริ่มต้น</li>
+            <li>flex:1 ทําให้ item ที่อยู่ในแถวเดียวกันมีขนาดเท่ากัน</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Flex Justify (จัดวางตําแหน่ง item)</h1>
+        <h3>**เทียบกับแกนหลัก เช่น<i>กําหนดแกนหลักเป็นแนวนอน</i></h3>
+        <h3>justify-content</h3>
+        <ul type="disk">
+            <li>flex-start ชิดซ้าย container ทิศทางตามแนวนอน</li>
+            <li>center กึ่งกลาง container ทิศทางตามแนวนอน</li>
+            <li>flex-end ชิดขวา container ทิศทางตามแนวนอน</li>
+            <li>space-around ระยะห่างซ้ายขวาและขนาด item เท่ากัน</li>
+            <li>space-between ระยะห่างซ้ายขวาและขนาด item เท่ากัน (ติดมุม)</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Flex Alignment (จัดวางตําแหน่ง item)</h1>
+        <h3>**เทียบกับแกนตรงข้าม เช่น<i>กําหนดแกนหลักเป็นแนวนอน</i></h3>
+        <h3>align-items (item ทุกตัว) และ align-self (Item ที่ต้องการ)</h3>
+        <ul type="disk">
+            <li>stretch - กําหนดขนาด item เท่ากับขนาด container</li>
+            <li>flex-start ด้านบน container ทิศทางตามแนวนอน</li>
+            <li>center กึ่งกลาง container ทิศทางตามแนวนอน</li>
+            <li>flex-end ด้านล่าง container ทิศทางตามแนวนอน</li>
+        </ul>
+    </div>
+</body>
+</html>

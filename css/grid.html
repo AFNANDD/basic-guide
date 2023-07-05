@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+</head>
+<body>
+    <div>
+        <h1>CSS Grid Layout</h1>
+        <p>Flexbox ถูกออกแบบให้จัดการ layout แบบทิศทางเดียว คือ 1 มิติเช่น เรียงลําดับ
+            จากบนลงล่าง ซ้ายไปขวา เป็นต้น</p>
+        <table border="2" cellpadding="15px" cellspacing="5px">
+            <thead>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+            </thead>
+        </table>
+        <p>แต่ Grid Layout ถูกออกแบบมาเพื่อจัดการ layout แบบ 2 มิติคือ มีทั้งแบบแนวนอน และแนวตั้งในเวลาเดียวกับ หรือมองง่ายๆก็เป็นแบบตาราง</p>
+        <table border="2" cellpadding="15px" cellspacing="5px">
+            <thead>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3>การใช้งาน</h3>
+        <p>display : grid;</p>
+        <h3>กําหนดขนาดแถว (ความสูง) :</h3>
+        <p>grid-template-rows : ความสูงของแถวที่ 1 , 2 , 3;</p>
+        <h3>กําหนดขนาดคอลัมน์ (ความกว้าง) :</h3>
+        <p>grid-template-columns : ความกว้างของคอลัมน์ที่ 1 , 2 , 3;;</p>
+    </div>
+    <div>
+        <img src="image/06.PNG" alt="">
+        <img src="image/07.PNG" alt="">
+    </div>
+    <div>
+        <h3>Grid Properties อื่นๆ</h3>
+        <ul type="disk">
+            <li>กําหนดสัดส่วนพื้นที่ด้วย span</li>
+            <li>กําหนดสัดส่วนพื้นที่ด้วยหน่วย fr</li>
+            <li>กําหนดระยะห่างพื้นที่ด้วย gap</li>
+            <li>กําหนดชื่อพื้นที่ด้วย grid-template-area</li>
+        </ul>
+    </div>
+</body>
+</html>

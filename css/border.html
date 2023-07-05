@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>การกําหนดเส้นขอบ</h2>
+            <p><b>Border</b>คือการกําหนดเส้นขอบ โดยมีรูปแบบดังนี้</p>
+            <p>border : &lt;รูปแบบเส้น&gt; &lt;ขนาด&gt; &lt;สี&gt;</p>
+            <p>รูปแบบเส้น ประกอบด้วย solid (เส้นทึบ) dotted (แบบจุด) dashed (เส้นปะ)</p>
+            <p>ขนาด คือ ความกว้างของเส้นกําหนดเป็นตัวเลขตามหน่วย</p>
+            <p>สี กําหนดรูปแบบเหมือน font เลย เช่น ชื่อสี , rgb , hex</p>
+        </div>
+        <div>
+            <h2>การกําหนดรูปแบบเส้นขอบ (style)</h2>
+            <p><b>Border</b>คือการกําหนดเส้นขอบ โดยมีรูปแบบดังนี้</p>
+            <p>border-style : &lt;รูปแบบเส้น&gt;</p>
+            <p>รูปแบบเส้น ประกอบด้วย solid (เส้นทึบ) dotted (แบบจุด) dashed (เส้นปะ)</p>
+            <p>border-xxx-style : &lt;รูปแบบเส้น&gt;</p>
+            <p>xxx คือ ทิศทางของรูปแบบเส้นขอบ</p>
+        </div>
+        <div>
+            <h2>การกําหนดสีเส้นขอบ (color)</h2>
+            <p><b>Border</b>คือการกําหนดเส้นขอบ โดยมีรูปแบบดังนี้</p>
+            <p>border-color : &lt;สี&gt;</p>
+            <p>สี ประกอบด้วย RGB , ชื่อสี , HEX</p>
+            <p>border-xxx-color: &lt;สี&gt;</p>
+            <p>xxx คือ ทิศทางของรูปแบบเส้นขอบ</p>
+        </div>
+        <div>
+            <h2>การกําหนดขนาดเส้นขอบ (width)</h2>
+            <p><b>Border</b>คือการกําหนดเส้นขอบ โดยมีรูปแบบดังนี้</p>
+            <p>border-width : &lt;ขนาด&gt;</p>
+            <p>border-xxx-width: &lt;ขนาด&gt;</p>
+            <p>xxx คือ ทิศทางของรูปแบบเส้นขอบ</p>
+            <p><b>แบบระบุค่าคงที่ :</b></p>
+            <p>medium - ขอบปานกลาง</p>
+            <p>thin - ขอบบาง</p>
+            <p>thick - ขอบหนา</p>
+            <p>initial - ค่าเริ่มต้น</p>
+            <p>inherit - อ้างอิงตาม parent element</p>
+        </div>
+        <div>
+            <h2>การกําหนดความโค้งเส้นขอบ (radius)</h2>
+            <p><b>Border</b>คือการกําหนดเส้นขอบ โดยมีรูปแบบดังนี้</p>
+            <p>border-radius : &lt;ค่าความโค้ง&gt;</p>
+            <p>border-xxx-radius : &lt;ค่าความโค้ง&gt;</p>
+            <p>xxx คือ ทิศทางของรูปแบบเส้นขอบ</p>
+            <div>
+                <h4>เขียน 4 รูปแบบ</h4>
+                <p>
+                    border-radius: 10px 5px 15px <br>
+                    20px; <br>
+                    - top-left = 10px <br>
+                    - top-right = 5px <br>
+                    - bottom-right = 15px <br>
+                    - bottom-left = 20px 
+                </p>
+            </div>
+            <div>
+                <h4>เขียน 3 รูปแบบ</h4>
+                <p>
+                    border-radius: 10px 5px 15px; <br>
+                    - top-left = 10px <br>
+                    - top-right , bottom-left = 5px <br>
+                    - bottom-right = 15px
+                </p>
+            </div>
+            <div>
+                <h4>เขียน 2 รูปแบบ</h4>
+                <p>
+                    border-radius : 10px 5px; <br>
+                    - top-left , bottom-right = 10px <br>
+                    - top-right ,bottom-left = 5px
+                </p>
+            </div>
+            <div>
+                <h4>เขียน 1 รูปแบบ</h4>
+                <p>
+                    border-radius : 10px; <br>
+                    ทุกทิศทางมีค่า = 10px
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

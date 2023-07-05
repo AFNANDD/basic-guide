@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font type</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <style>
+        .header1{
+            font-family: Bebas Neue,Dancing Script,Raleway;
+        }
+        #header2{
+            font-family: Dancing Script,Bebas Neue,Raleway;
+        }
+        .p{
+            font-family: Raleway,Dancing Script,Bebas Neue;
+        }
+        .sp{
+            border: 2px solid rebeccapurple;
+            padding: 10px;
+        }
+        .size1{
+            font-size: small;
+        }
+        .psize{
+            font-size: 25px;
+        }   
+        .size2{
+            font-size: xx-large;
+        }
+        .weight1{
+            font-weight: 900;
+        }
+        .weight2{
+            font-weight: lighter;
+        }
+        .pweight{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<head>
+
+</head>
+<body>
+<div>
+    <div>
+        <h2>การกําหนดชนิดฟอนต์ (Font)</h2>
+        <p><b>font-family </b>กําหนดชนิดของฟอนต์ในหน้าเว็บกําหนดได้ทั้งแบบฟอนต์เดียวหรือหลายฟอนต์ โดยกําหนดได้ดังนี้ คือ</p>
+        <p>
+            ฟอนต์แบบที่ 1; <br>
+            ฟอนต์แบบที่ 1 , ฟอนต์แบบที่ 2, ชนิดฟอนต์;
+        </p>
+        <p>สามารถกําหนดฟอนต์ได้มากกว่า 1 ชนิดในกรณีBrowserไม่รองรับ
+            ฟอนต์ชนิดแรก ก็จะนําฟอนต์ลําดับถัดไปมาใช้งานแทน</p>
+    </div>
+    <div>
+        <h2>การกําหนดขนาดข้อความ</h2>
+        <p><b>font-size</b>กําหนดขนาดข้อความหรือตัวอักษรในหน้าเว็บโดย
+            กําหนด 2 รูปแบบ คือ</p>
+        <p><b>แบบค่าคงที่ :</b>xx-small, x-small, medium, large,
+            x-large, xx-large
+            </p>
+        <p><b>แบบตัวเลข :</b>10px 20px </p>
+    </div>
+    <div>
+        <h2>การกําหนดความหนาข้อความ</h2>
+        <p><b>font-weight</b>กําหนดได้ 2 รูปแบบ</p>
+        <p><b>แบบค่าคงที่ :</b>lighter , bold (ตัวหนา) bolder (ตัวหนากว่า)
+            </p>
+        <p><b>แบบตัวเลข :</b>100, 200, …., 800, 900 </p>
+        <p><b>font-style :</b> กําหนดตัวเอียง โดยค่าที่กําหนดได้คือ italic ,
+            oblique (45 องศา)</p>
+    </div>
+    <div>
+        <h2>การกําหนดสี (Colors)</h2>
+        <p><b>color</b>กําหนดได้ 4 รูปแบบ</p>
+        <p><b>ชื่อสี :</b>green , red , yellow , pink</p>
+        <p><b>RGB :</b>rgb(red, green, blue) , rgb(30%, 20%, 45%) </p>
+        <p><b>Hexadecimal :</b> #000 #FFF</p>
+        <p><b>HSL :</b>(hue, saturation, lightness)</p>
+    </div>
+</div>
+<hr>
+<br>
+</body>
+<body>
+    <span class="sp">Font-Family</span>
+    <h1 class="header1">Hello World</h1>
+    <p class="p">Lorem ipsum dolor sit amet.</p>
+    <h2 id="header2">This my guide for work</h2>
+    <p class="p">Lorem ipsum dolor sit amet.</p>
+    <br>
+    <span class="sp">Font-Size</span>
+    <br>
+    <br>
+    <h1 class="size1">Hello World</h1>
+    <p class="psize">Lorem ipsum dolor sit amet.</p>
+    <h2 id="size2">This my guide for work</h2>
+    <p class="psize">Lorem ipsum dolor sit amet.</p>
+    <span class="sp">Font-Weight</span>
+    <br>
+    <h1 class="weight1">Hello World</h1>
+    <p class="pweight">Lorem ipsum dolor sit amet.</p>
+    <h2 id="weight2">This my guide for work</h2>
+    <p class="pweight">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
