@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การสร้างตาราง (Table)</title>
+</head>
+<head>
+    <style>
+        html{
+            max-width: 70ch;
+            padding: 2rem;
+            margin: auto;
+            line-height: 1.5rem;
+            font-size: 24px;
+        }
+        div{
+                border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> Back </a>
+    <div>
+        <h1>การสร้างตาราง (Table)</h1>
+        <p>
+            &lt;table&gt;&lt;/table&gt; ใช้กําหนดสําหรับสร้างตาราง <br>
+            &lt;thead&gt;&lt;/thead&gt; ใช้กําหนดกลุ่มเนื้อหาส่วนหัวตาราง <br>
+            &lt;tbody&gt;&lt;/tbody&gt; ใช้กําหนดกลุ่มเนื้อหาตาราง <br>
+            &lt;tfoot&gt;&lt;/tfoot&gt; ใช้กําหนดกลุ่มส่วนใต้ตาราง <br>
+            &lt;tr&gt;&lt;/tr&gt; ใช้กําหนดแถวในตาราง <br>
+            &lt;td&gt;&lt;/td&gt; กําหนดคอลัมน์ <br>
+            &lt;th&gt;&lt;/th&gt; กําหนดคอลัมน์ที่แสดงผลในส่วนหัวของตาราง <br>
+        </p>
+        <h3>Attribute ของตาราง</h3>
+        <p>
+            ● border=&ldquo;ความหนา&rdquo; กําหนดเส้นขอบและความหนาของเส้นขอบตาราง
+            ค่าเริ่มต้น = 0 <br>
+            ● width=&ldquo;%&rdquo; กําหนดความกว้างหน่วยเป็น % <br>
+            ● bgcolor=&ldquo;สี&rdquo; กําหนดสีพื้นหลังในตาราง <br>
+            ● &lt;table bgcolor=&ldquo;สี&rdquo;&gt; กําหนดสีทั้งแถวและคอลัมน์ <br>
+            ● &lt;tr bgcolor=&ldquo;สี&rdquo;&gt; สีของแถว <br>
+            ● &lt;td bgcolor=&ldquo;สี&rdquo;&gt; สีของคอลัมน์ <br>
+            <br>
+            ● colspan=“x” รวมคอลัมน์ ค่า x คือจํานวนคอลัมน์ที่ต้องการรวมเข้าด้วยกัน (ช่อง &lt;td&gt;) <br>
+            ● rowspan=“x” รวมแถว ค่า x คือจํานวนแถวที่ต้องการรวมเข้าด้วยกัน <br>
+            ● align=“left, center, right” จัดตําแหน่งของภาพ หรืออักษรภายในช่องตาราง &lt;td&gt; ค่า
+            ปกติคือ left <br>
+            ● Cellpadding แสดงข้อมูลภายในตาราง หากมีค่ามากก็จะมีพื้นที่การแสดงผลเป็นที่ว่างมาก
+            ขึ้น โดยมีค่าเริ่มต้นเป็น 0 (หน่วย Pixel) <br>
+            ● Cellspacing กําหนดขนาดเส้นตาราง หากมีค่ามากขึ้นเส้นตารางก็ จะมีขนาดมากตามไป
+            ด้วย โดยมีค่าเริ่มต้นเป็น 0 (หน่วย Pixel) <br>
+        </p>
+    </div>
+</body>
+<body>
+    <h1>ตารางสินค้า</h1>
+    <table border="2px" cellpadding="2px" cellspacing="2px" style="border-color: rebeccapurple;">
+        <thead style="border-color: rebeccapurple;" >
+            <th>ชื่อสินค้า</th>
+            <th>ประเภท</th>
+            <th>ราคาสินค้า</th>
+            <th>กำไร</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>มือถือ</td>
+                <td>อุปกรณือิเล็ก</td>
+                <td>12000</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>โทรทัศน์</td>
+                <td>อุปกรณือิเล็ก</td>
+                <td>15000</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>คอม</td>
+                <td>อุปกรณือิเล็ก</td>
+                <td colspan="2">12000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2"> รวมทั้งหมด</td>
+                <td>3ชิ้น</td>
+                <td colspan="2">32000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

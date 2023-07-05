@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การแสดงรายการ (Lists)</title>
+</head>
+<head>
+    <style>
+        html{
+            max-width: 70ch;
+            padding: 2rem;
+            margin: auto;
+            line-height: 1.5rem;
+            font-size: 24px;
+        }
+        div{
+            border:1px solid black;
+        }
+        .container{
+        display: flex;
+        }
+
+        .left{
+        flex: 1;
+        }
+
+        .right{
+        flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> Back </a>
+    <div>
+        <h1>การแสดงรายการ (Lists)</h1>
+        <p>ใช้แสดงข้อมูลในรูปแบบของรายการมี 2 รูปแบบ </p>
+        <p>● รายการแบบใช้ตัวเลข (Order List : Ol)</p>
+        <p>● รายการแบบใช้สัญลักษณ์ (Unorder List : Ul)</p>
+    </div>
+    <br>
+    <div class="container">
+        <div class="left">
+            <p> &lt;ol type=&ldquo;รูปแบบการแสดงผล&rdquo;&gt;</p>
+            <p> &lt;li&gt;หัวข้อย่อยรายการที่ 1&lt;/li&gt;</p>
+            <p> &lt;li&gt;หัวข้อย่อยรายการที่ 2&lt;/li&gt;</p>
+            <p> &lt;/ol&gt;</p>
+        </div>
+        <div class="right">
+            <p> &lt;ul type=&ldquo;รูปแบบการแสดงผล&rdquo;&gt; </p>
+            <p> &lt;li&gt;หัวข้อย่อยรายการที่ 1&lt;/li&gt;</p>
+            <p> &lt;li&gt;หัวข้อย่อยรายการที่ 2&lt;/li&gt;</p>
+            <p> &lt;/ul&gt;</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <p>● "A" - ตัวอักษรพิมพ์ใหญ่ เช่น A, B, C</p>
+            <p>● "a" - อักษรพิมพ์เล็ก เช่น a, b, c</p>
+            <p>● "I" - เลขแบบโรมัน เช่น I, II, III</p>
+        </div>
+        <div class="right">
+            <p>● disc - จุดสีดํา</p>
+            <p>● circle - จุดวงกลมโปร่ง</p>
+            <p>● square - สี่เหลี่ยมทึบดํา (ตัวเล็กทั้งหมด)</p>
+        </div>
+    </div>
+    <hr>
+</body>
+ิ<body>
+    <div class="container">
+        <div class="left">
+            <h3>รายการที่ต้องเตรียมทักษะ</h3>
+            <ol type="a">
+                <li>html</li>
+                <li>css + bootstrap</li>
+                <li>javascript</li>
+                <li>asp.net</li>
+            </ol>
+        </div>
+        <div class="right">
+            <h3>รายการสกิลเพิ่มเติมที่ต้องเตรียม</h3>
+            <ul type="circle">
+                <li>Angular</li>
+                <li>asp.net with Angular</li>
+                <li>System analysis and design</li>
+                <li>database</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        form{
+            border: 1.5px solid green;
+        }
+        input{
+            border: 1.5px solid blue;
+        }
+    </style>
+</head>
+<head>
+    <style>
+        html{
+            max-width: 70ch;
+            padding: 2rem;
+            margin: auto;
+            line-height: 1.5rem;
+            font-size: 24px;
+        }
+        div{
+                border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> Back </a>
+    <div>
+        <h1>HTML FORM</h1>
+        <p>
+            การพัฒนาเว็บแอปพลิเคชั่นจําเป็นต้องมีการสร้างแบบฟอร์ม <br>
+            ที่ผู้ใช้งานสามารถป้อนข้อมูลต่างๆได้ เพื่อนําข้อมูลที่ป้อนนั้น <br>
+            ไปทําการประมวลผลอีกทีโดยการรับค่าข้อมูลจะดําเนินการ <br>
+            ผ่าน &lt;form&gt;....&lt;/form&gt; <br>
+        </p>
+    </div>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <thead>
+            <th>Tag</th>
+            <th>คําอธิบาย</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>สร้างช่องรับข้อความต่างๆ</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>แสดงตัวเลือกในรูปแบบ Drop-down</td>
+            </tr>
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>สร้างตัวเลือก</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>สร้างปุ่ม</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>กําหนดป้ายชื่อให้ช่องรับข้อมูล</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>สร้างช่องรับข้อความแบบหลายบรรทัด</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<body>
+    <h1 align="center"> Form SignIn</h1>
+    <form action="" align="center"> 
+        <div>
+            <label for="Firstname"> ชื่อจริง </label>
+            <!-- placeholder คือ ข้อความในกล่อง required คือการกำหนดเงือนไขในการกรอกข้อมูลและห้ามเป็นค่าว่าง -->
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริง" required>
+        </div>
+        <div>
+            <label for="Lastname"> นามสกุล </label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุล">
+        </div>
+        <div>
+            <label for="Lastname">Email</label>
+            <input type="email" name="email" placeholder="ป้อนอีเมลล์" value="Testsssss">
+        </div>
+        <div>
+            <label for="Lastname">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label for="Lastname">Address</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="Lastname">age</label>
+            <!-- readonly คือการอ่านข้อมูลอย่างเดียวเปลี่ยนไม่ได้ -->
+            <input type="number" name="age" value="10" min="10" max="65" readonly>
+        </div>
+        <div>
+            <label for="Lastname">Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label for="Lastname">Telephone</label>
+            <input type="tel" name="telephone">
+        </div>
+        <div>
+            <label for="Lastname">Love Color</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="Lastname">Number</label>
+            <input type="range" name="rnum">
+        </div>
+        <div>
+            <label for="Lastname">Education</label>
+            <select name="edu" id="">
+                <option value="มัธยม">มัธยม</option>
+                <option value="ปวส">ปวส</option>
+                <option value="ป.ตรี" selected>ป.ตรี</option>
+            </select>
+        </div>
+        <div>
+            <label for="Lastname">Sex</label>
+            <input type="radio" name="sex">Man
+            <input type="radio" name="sex">Woman
+        </div>
+        <div>
+            <label for="Lastname">อดิเรก</label>
+            <input type="checkbox" name="fav">play game
+            <input type="checkbox" name="fav">play game2
+            <input type="checkbox" name="fav">play game3
+            <input type="checkbox" name="fav">play game4
+        </div>
+        <div>
+            <label for="Lastname">File</label>
+            <input type="file" name="file">
+        </div>
+        <div>
+            <label for="Lastname">URL</label>
+            <input type="url" name="url">
+        </div>
+
+        <div>
+            <!-- <input type="submit" value="Save"> -->
+            <button type="submit">SAVE</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

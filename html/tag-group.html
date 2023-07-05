@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจัดกลุ่มด้วย div , span</title>
+    <style>
+        .b{
+            color: brown;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<head>
+    <a href="index.html"> Back </a>
+    <style>
+        /* html{
+            max-width: 70ch;
+            padding: 2rem;
+            margin: auto;
+            line-height: 1.5rem;
+            font-size: 24px;
+        } */
+        /* div{
+                border:1px solid black;
+        } */
+        .container{
+            /* max-width: 70ch; */
+            /* padding: 2rem; */
+            /* margin: auto; */
+            /* line-height: 1.5rem;
+            font-size: 24px; */
+            border: 1px solid rebeccapurple;
+            padding: 20px;
+        }
+        .test{
+            border: 1px solid red;
+            padding-inline: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="test">
+        <h1>การจัดกลุ่มด้วย div , span</h1>
+    </div>
+    <div class="test">
+        <p>
+            &lt;span&gt;&lt;/span&gt; ใช้จัดกลุ่มข้อความหรือแท็กต่าง ๆ เข้าเป็นกลุ่มเดียวกัน <br>
+            เพื่อกําหนด สี รูปแบบตัวอักษร หรือ style ให้กับข้อความและแท็กภายใต้ <br>
+            &lt;span&gt; ให้เป็นรูปแบบเดียวกัน <br>
+        </p>
+    </div>
+    <div class="test">
+        <p>
+            &lt;div&gt;&lt;/div&gt; ใช้จัดกลุ่มข้อความหรือแท็กต่าง ๆ เข้าเป็นกลุ่มเดียวกัน <br>
+            ลักษณะคล้ายๆกับ &lt;span&gt;แต่แตกต่างกันตรงที่แท็ก div จะมีการขึ้นบรรทัด <br>
+            ใหม่ก่อนเริ่มแสดงข้อความภายใต้แท็ก div <br>
+        </p>
+    </div>
+</div>
+<br>
+</body>
+<body>
+    <h1>div style</h1>
+    <div class="b">
+        Hello World
+    </div>
+    <br>
+    <hr style="max-width: 50ch;">
+    <h1>span style</h1>
+    <span class="b">
+        Hello World
+    </span>
+</body>
+</html>

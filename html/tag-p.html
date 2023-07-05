@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงข้อมูลเป็น Paragraphs&lt;p&gt;</title>
+</head>
+<thead>
+    <style>
+        html{
+            max-width: 70ch;
+            padding: 2rem;
+            margin: auto;
+            line-height: 1.5rem;
+            font-size: 24px;
+        }
+        div{
+                border:1px solid black;
+        }
+    </style>
+</thead>
+<body>
+    <a href="index.html"> Back </a>
+    <div>
+        <h1>แสดงข้อมูลเป็น Paragraphs&lt;p&gt;</h1>
+        <p>
+            จุดเริ่มต้นของ Paragraphs จะเริ่มที่บรรทัดใหม่ และประโยคที่ไม่ได้
+            อยู่ใน Paragraphs เดียวกัน แต่อยู่ในตําแหน่งที่ต่อจาก
+            Paragraphs ก็จะถูกจัดให้ขึ้นบรรทัดใหม่ทันที เช่น
+        </p>
+        <p>&lt;p&gt;Hello World&lt;/p&gt;</p>
+        <h2>Tag อื่นๆที่ใช้ร่วมกับ &lt;p&gt;ได้</h2>
+        <p>● &lt;small&gt; => ตัวเล็ก</p>
+        <p>● &lt;strong&gt; => ตัวหนา</p>
+        <p>● &lt;b&gt; => ตัวหนา</p>
+        <p>● &lt;i&gt; => ตัวเอียง</p>
+        <p>● อื่นๆ</p>
+        <h2>แท็กสําหรับขึ้นบรรทัดใหม</h2>
+        <p>&lt;br /&gt; เพื่อให้เนื้อหาดูเป็นระเบียบและอ่านได้ง่ายขึ้น</p>
+        <h2>แท็กสําหรับสร้างเส้นคั่นในแนวนอน</h2>
+        <p>&lt;hr&gt; สร้างเส้นคั่นให้กับเนื้อหา</p>
+    </div>
+    <div>
+        <!-- เส้นคั่นในแนวนอน -->
+        <hr>
+        <p><strong> ● &lt;strong&gt; => ตัวหนา </strong></p>
+        <p><small> ● &lt;small&gt; =&gt; ตัวเล็ก </small></p>
+        <p>
+            <b> ● &lt;b&gt; => ตัวหนา </b>
+            <!-- ขึ้นบรรทัดใหม่ -->
+            <br>
+            <i> ● &lt;i&gt; => ตัวเอียง </i> 
+        </p>
+    </div>
+</body>
+<body>
+    <h1>แสดงข้อมูลเป็น Paragraphs</h1>
+    <p>สวัสดีฉันชื่อ <strong>อัฟนาน</strong> เป็นคน <small>หัวช้า</small> 
+    <br>ที่กำลังจะได้<i>ทำงาน</i> และต้องมาปวดหัวกับการ<b>เตรียมพร้อมนี้แหละ</b></p>
+</body>
+</html>
